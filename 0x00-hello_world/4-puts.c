@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 
-/*
+/**
  *  code will be in main
  *
  * Return 0 (success)

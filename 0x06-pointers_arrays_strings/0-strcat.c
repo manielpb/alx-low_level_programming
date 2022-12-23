@@ -1,6 +1,7 @@
 #include "main.h"
+#include <string.h>
 /**
- * _strcat - concatenates the string pointed to @src to
+ * *_strcat - concatenates the string pointed to @src to
  * the end of the string pointed by @dest
  * @dest: param pointer to a char
  * @src: param pointer to a char

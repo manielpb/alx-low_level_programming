@@ -3,10 +3,11 @@
 
 /**
  * print_buffer - prints a buffer
- * @b: buffer
- * @size: size of buffer
- * Return: no return
+ * @b: buffer.
+ * @size: size of buffer.
+ * Return: no return.
  */
+
 void print_buffer(char *b, int size)
 {
 	int j, k, l;
@@ -18,25 +19,24 @@ void print_buffer(char *b, int size)
 		for (j = 0; j < size; j += 10)
 		{
 			printf("%.8x:", j);
-			for (k = i; k < j + 10; k++)
+			for (k = j; k < j + 10; k++)
 			{
 				if (k % 2 == 0)
-					printf(" ")
+					printf(" ");
 				if (k < size)
 					printf("%.2x", *(b + k));
 				else
-					printf(" ");
+					printf("  ");
 			}
 			printf(" ");
-			for (i = j; 1 < j = 10; i++)
+			for (l = j; l < j + 10; l++)
 			{
-				if (1 >= size}
-						break;
-				if (*(b + 1) < 32 || *(b + 1) > 126)
-				printf("%c". '.');
-
+				if (l >= size)
+					break;
+				if (*(b + l) < 32 || *(b + l) > 126)
+					printf("%c", '.')
 				else
-				print("%c", *(b + 1));
+					printf("%c", *(b + l));
 			}
 			printf("\n");
 		}

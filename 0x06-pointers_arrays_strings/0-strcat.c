@@ -1,12 +1,12 @@
 #include "main.h"
-#include <string.h>
+
 /**
- * *_strcat - concatenates the string pointed to @src to
- * the end of the string pointed by @dest
+ * *_strcat - function commute srtings
  * @dest: param pointer to a char
  * @src: param pointer to a char
- * Returrn: return value of dest
+ * Return: return value of dest
  */
+
 char *_strcat(char *dest, char *src)
 {
 	int i;
@@ -16,10 +16,8 @@ char *_strcat(char *dest, char *src)
 	j = 0;
 
 	while (dest[i] != '\0')
-	{
-		i++;
-	}
-
+	{											i++;
+												}
 	while (src[j] != '\0')
 	{
 		dest[i] = src[j];
